@@ -112,7 +112,7 @@ class IttiKochSaliency(torch.nn.Module):
             self._params = IttiKochParams()
         else:
             self._params = params
-
+            
     def forward(self, x):
         # We first normalize the input per-channel in [0,1].
         x_normalized = self._normalize_per_channel(x)
